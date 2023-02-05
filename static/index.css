@@ -1,0 +1,81 @@
+body{
+    background-image: url("./fondo.png");
+    font-family: "Kanit";
+    
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    width: 200px;
+    height: 30px;
+}
+
+div{
+    display: block;
+    position: absolute;
+
+}
+div div{
+    height: 100px;
+    width: 100px;
+}
+
+.contenedor{
+    margin: 50px auto;
+    position: relative;
+    height: 450px;
+    width: 450px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.caja1{
+    top: 100px;
+    right: 225px;
+}
+
+.caja2{
+    top: 200px;
+    right: 225px;
+}
+
+
+
+/*.cuadro-texto{
+padding: 20px 0 0 0;
+display: flex;
+justify-content: center;
+height: 50px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+
+    border: 50px;
+    width: 129px;
+    height: 64px;
+
+    background: #D9D9D9;
+    border-radius: 117px;
+}
+
+
+.txtinp{
+    border: solid 3px rgba(0, 0, 0, 0.493);
+    border-radius: 117px;
+
+    text-align: center;
+    font-size: 20px;
+    width: 300px;
+    height: 64px;
+}
+
+.txtinp:focus {
+    outline:none;
+    border: solid 3px orangered;
+}
+*/
