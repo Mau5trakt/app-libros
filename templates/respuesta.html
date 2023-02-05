@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/respuesta.css">
+    <link rel="stylesheet" href="../static/normalize.css">
+    <link rel="stylesheet" href="respuesta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap" rel="stylesheet">
+    <title>Respuesta</title>
+</head>
+<body>
+    <header> <a class="texto-header" href="">Volver</a> </header>
+    <div class="contenedor">
+    {% for a in range(rango) %}
+
+        <div class="caja">
+            <div class="caja-imagen">
+                    <img src={{ respuesta.imagen(a) }} alt="">
+            </div>
+
+            <div class="caja-texto">
+                <p class="bold">Titulo</p>
+                <p class="regular">{{ respuesta.titulo(a) }}</p>
+                <p class="bold">Autor</p>
+                <p class="regular">{{ respuesta.autor(a) }}</p>
+                <p class="bold">Sinopsis</p>
+                <p class="regular">{{ respuesta.descripcion(a) }}</p>
+                <a class="link" href="{{ respuesta.url(a) }}">Ir al libro</a>
+                
+
+            </div>
+        </div>
+    {% endfor %}
+
+    </div>
+
+</body>
+</html>
